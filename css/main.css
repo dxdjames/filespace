@@ -1,0 +1,25 @@
+/*
+* main.css
+* Description: The main css file for the filespace application
+* Purpose: Most of the css for the application will be contained within this file.
+*/
+
+/* use global font from google webfonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+}
+
+.container {
+    padding: 5px;
+}
+
+.application-home {
+    font-size: 2em;
+    text-decoration: none;
+    color: #3F3F3F;
+}

@@ -310,26 +310,50 @@ body {
 /* end breadcrumb hyperlinks */
 
 /* icon css */
+.icon-container {
+    width: 120px;
+    margin: 5px;
+    text-align: center;
+    display: inline-block;
+}
 .icon {
     display: inline-block;
-    padding: 15px;
-    text-align: center;
-    border-radius: 5px;
-    min-width: 85px;
-    max-width: 85px;
     text-overflow-mode: ellipsis;
     transition: all 0.1s ease-in-out;
-    cursor: pointer;
-}
-.icon:hover {
-    box-shadow: 0 0 0 1px rgba(52, 152, 219,1.0);
-    background-color: rgba(52, 152, 219,.2);
 }
 .icon .file-name {
     margin: 0px;
-    padding: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .icon-64 img {
-    max-width: 64px;
-    max-height: 64px;
+    max-width: 64px; /* set max widths and heights for scaled icons will be 74px after padding */
+    max-height: 64px; /* will be 84px after padding */
+    padding: 10px;  /* 10px padding on the top and bottom so the background will look pretty when it's selected */
+    padding-left: 5px; /* 5px padding on the sides */
+    padding-right: 5px;
+    border-radius: 5px;
+}
+.icon-64 p {
+    max-width: 110px; /* 110px + 10px padding = 120px to match the width of the container div */
+    border-radius: 5px;
+    text-overflow: ellipsis; /* long file names will have ellipsis at the end but whole name will show in tooltip */
+    overflow: hidden;
+}
+.icon-container .selected img {
+    box-shadow: 0 0 0 3px rgba(68, 75, 84, .1);
+    background-color: rgba(68, 75, 84, .5);
+}
+.icon-container .selected .file-name {
+    background-color: rgb(64,150,238);
+    color: white;
+}
+.icon p .hidden {
+    display: none;
+}
+.icon .item-info {
+    padding: 0;
+    margin: 0;
+    font-size: .8em;
+    color: #4096ee;
 }

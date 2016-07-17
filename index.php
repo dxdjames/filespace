@@ -114,7 +114,10 @@ if(!isset($_SESSION['loggedin'])){
                 <a href="#">View</a>
                 <ul>
                     <li><a href="#"><i class="fa fa-image" aria-hidden="true"></i> Large Icons</a></li>
-                    <li><a href="#"><i class="fa fa-image" aria-hidden="true"></i> Medium Icons</a></li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-image" aria-hidden="true"></i> Medium Icons <i class="fa fa-check" aria-hidden="true"></i></a>
+                    </li>
                     <li><a href="#"><i class="fa fa-image" aria-hidden="true"></i> Small Icons</a></li>
                     <li><a href="#"><i class="fa fa-list" aria-hidden="true"></i> List</a></li>
                     <li><a href="#"><i class="fa fa-list-alt" aria-hidden="true"></i> Details</a></li>
@@ -151,145 +154,740 @@ if(!isset($_SESSION['loggedin'])){
 <section class="main-content">
     <div class="container">
         <!-- begin dummy content -->
-        <div class="icon icon-64">
-            <img src="img/FolderIcons/PryFrenteBlack/128/ET.png" alt="Home">
-            <p class="file-name">Home</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FolderIcons/PryFrenteBlack/128/ET.png" alt="Home">
+                <p class="file-name">Home</p>
+                <p class="item-info">12 Items</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FolderIcons/PryFrenteBlack/128/ribbondoc.png" alt="Home">
-            <p class="file-name">Documents</p>
+        <div class="icon-container">
+            <div class="icon icon-64 selected">
+                <img src="img/FolderIcons/PryFrenteBlack/128/ribbondoc.png" alt="Home">
+                <p class="file-name">Documents</p>
+                <p class="item-info">59 Items</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FolderIcons/PryFrenteBlack/128/ribbonpictures.png" alt="Home">
-            <p class="file-name">Pictures</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FolderIcons/PryFrenteBlack/128/ribbonpictures.png" alt="Home">
+                <p class="file-name">Pictures</p>
+                <p class="item-info">1242 Items</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FolderIcons/PryFrenteBlack/128/ribbonmusic.png" alt="Home">
-            <p class="file-name">Music</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FolderIcons/PryFrenteBlack/128/ribbonmusic.png" alt="Home">
+                <p class="file-name">Music</p>
+                <p class="item-info">12844 Items</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FolderIcons/PryFrenteBlack/128/ribbonvideo.png" alt="Home">
-            <p class="file-name">Movies</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FolderIcons/PryFrenteBlack/128/ribbonvideo.png" alt="Home">
+                <p class="file-name">Movies</p>
+                <p class="item-info">174 Items</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/jpeg.png" alt="Home">
-            <p class="file-name">Photo.jpg</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/jpeg.png" alt="Home">
+                <p class="file-name">Photo<span class="file-extension">.jpg</span></p>
+                <p class="item-info">128 KB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/docx_mac.png" alt="Home">
-            <p class="file-name">Resume.docx</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/docx_mac.png" alt="Home">
+                <p class="file-name">Resume<span class="file-extension">.docx</span></p>
+                <p class="item-info">9 KB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/xlsx_mac.png" alt="Home">
-            <p class="file-name">Budget.docx</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/xlsx_mac.png" alt="Home">
+                <p class="file-name">Budget<span class="file-extension">.xlsx</span></p>
+                <p class="item-info">128 KB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
-            <p class="file-name">Song.mp3</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song<span class="file-extension">.mp3</span></p>
+                <p class="item-info">3.5 MB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
-            <p class="file-name">Song1.mp3</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song1<span class="file-extension">.mp3</span></p>
+                <p class="item-info">4 MB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
-            <p class="file-name">Song2.mp3</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song2<span class="file-extension">.mp3</span></p>
+                <p class="item-info">5 MB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
-            <p class="file-name">Song3.mp3</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song3<span class="file-extension">.mp3</span></p>
+                <p class="item-info">2.3 MB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/mpeg.png" alt="Home">
-            <p class="file-name">Movie.mp3</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mpeg.png" alt="Home">
+                <p class="file-name">Movie<span class="file-extension">.mp3</span></p>
+                <p class="item-info">5.2 MB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/html.png" alt="Home">
-            <p class="file-name">Homepage.html</p>
+        <div class="icon-container">
+            <div class="icon icon-64 selected">
+                <img src="img/FileIcons/Default/128/html.png" title="Homepagewith_a_really_long_file_name_and_stuff.html" alt="Home">
+                <p class="file-name">Homepagewith_a_really_long_file_name_and_stuff<span class="file-extension">.html</span></p>
+                <p class="item-info">13 KB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/psd.png" alt="Home">
-            <p class="file-name">Image.psd</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/psd.png" alt="Home">
+                <p class="file-name">Image<span class="file-extension">.psd</span></p>
+                <p class="item-info">1.3 MB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/jpeg.png" alt="Home">
-            <p class="file-name">Photo.jpg</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/jpeg.png" alt="Home">
+                <p class="file-name">Photo<span class="file-extension">.jpg</span></p>
+                <p class="item-info">128 KB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/docx_mac.png" alt="Home">
-            <p class="file-name">Resume.docx</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/docx_mac.png" alt="Home">
+                <p class="file-name">Resume<span class="file-extension">.docx</span></p>
+                <p class="item-info">9 KB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/xlsx_mac.png" alt="Home">
-            <p class="file-name">Budget.docx</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/xlsx_mac.png" alt="Home">
+                <p class="file-name">Budget<span class="file-extension">.xlsx</span></p>
+                <p class="item-info">128 KB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
-            <p class="file-name">Song.mp3</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song<span class="file-extension">.mp3</span></p>
+                <p class="item-info">3.5 MB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
-            <p class="file-name">Song1.mp3</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song1<span class="file-extension">.mp3</span></p>
+                <p class="item-info">4 MB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
-            <p class="file-name">Song2.mp3</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song2<span class="file-extension">.mp3</span></p>
+                <p class="item-info">5 MB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
-            <p class="file-name">Song3.mp3</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song3<span class="file-extension">.mp3</span></p>
+                <p class="item-info">2.3 MB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/mpeg.png" alt="Home">
-            <p class="file-name">Movie.mp3</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mpeg.png" alt="Home">
+                <p class="file-name">Movie<span class="file-extension">.mp3</span></p>
+                <p class="item-info">5.2 MB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/html.png" alt="Home">
-            <p class="file-name">Homepage.html</p>
+        <div class="icon-container">
+            <div class="icon icon-64 selected">
+                <img src="img/FileIcons/Default/128/html.png" title="Homepagewith_a_really_long_file_name_and_stuff.html" alt="Home">
+                <p class="file-name">Homepagewith_a_really_long_file_name_and_stuff<span class="file-extension">.html</span></p>
+                <p class="item-info">13 KB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/psd.png" alt="Home">
-            <p class="file-name">Image.psd</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/psd.png" alt="Home">
+                <p class="file-name">Image<span class="file-extension">.psd</span></p>
+                <p class="item-info">1.3 MB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/jpeg.png" alt="Home">
-            <p class="file-name">Photo.jpg</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/jpeg.png" alt="Home">
+                <p class="file-name">Photo<span class="file-extension">.jpg</span></p>
+                <p class="item-info">128 KB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/docx_mac.png" alt="Home">
-            <p class="file-name">Resume.docx</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/docx_mac.png" alt="Home">
+                <p class="file-name">Resume<span class="file-extension">.docx</span></p>
+                <p class="item-info">9 KB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/xlsx_mac.png" alt="Home">
-            <p class="file-name">Budget.docx</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/xlsx_mac.png" alt="Home">
+                <p class="file-name">Budget<span class="file-extension">.xlsx</span></p>
+                <p class="item-info">128 KB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
-            <p class="file-name">Song.mp3</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song<span class="file-extension">.mp3</span></p>
+                <p class="item-info">3.5 MB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
-            <p class="file-name">Song1.mp3</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song1<span class="file-extension">.mp3</span></p>
+                <p class="item-info">4 MB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
-            <p class="file-name">Song2.mp3</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song2<span class="file-extension">.mp3</span></p>
+                <p class="item-info">5 MB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
-            <p class="file-name">Song3.mp3</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song3<span class="file-extension">.mp3</span></p>
+                <p class="item-info">2.3 MB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/mpeg.png" alt="Home">
-            <p class="file-name">Movie.mp3</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mpeg.png" alt="Home">
+                <p class="file-name">Movie<span class="file-extension">.mp3</span></p>
+                <p class="item-info">5.2 MB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/html.png" alt="Home">
-            <p class="file-name">Homepage.html</p>
+        <div class="icon-container">
+            <div class="icon icon-64 selected">
+                <img src="img/FileIcons/Default/128/html.png" title="Homepagewith_a_really_long_file_name_and_stuff.html" alt="Home">
+                <p class="file-name">Homepagewith_a_really_long_file_name_and_stuff<span class="file-extension">.html</span></p>
+                <p class="item-info">13 KB</p>
+            </div>
         </div>
-        <div class="icon icon-64">
-            <img src="img/FileIcons/Default/128/psd.png" alt="Home">
-            <p class="file-name">Image.psd</p>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/psd.png" alt="Home">
+                <p class="file-name">Image<span class="file-extension">.psd</span></p>
+                <p class="item-info">1.3 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/jpeg.png" alt="Home">
+                <p class="file-name">Photo<span class="file-extension">.jpg</span></p>
+                <p class="item-info">128 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/docx_mac.png" alt="Home">
+                <p class="file-name">Resume<span class="file-extension">.docx</span></p>
+                <p class="item-info">9 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/xlsx_mac.png" alt="Home">
+                <p class="file-name">Budget<span class="file-extension">.xlsx</span></p>
+                <p class="item-info">128 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song<span class="file-extension">.mp3</span></p>
+                <p class="item-info">3.5 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song1<span class="file-extension">.mp3</span></p>
+                <p class="item-info">4 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song2<span class="file-extension">.mp3</span></p>
+                <p class="item-info">5 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song3<span class="file-extension">.mp3</span></p>
+                <p class="item-info">2.3 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mpeg.png" alt="Home">
+                <p class="file-name">Movie<span class="file-extension">.mp3</span></p>
+                <p class="item-info">5.2 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64 selected">
+                <img src="img/FileIcons/Default/128/html.png" title="Homepagewith_a_really_long_file_name_and_stuff.html" alt="Home">
+                <p class="file-name">Homepagewith_a_really_long_file_name_and_stuff<span class="file-extension">.html</span></p>
+                <p class="item-info">13 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/psd.png" alt="Home">
+                <p class="file-name">Image<span class="file-extension">.psd</span></p>
+                <p class="item-info">1.3 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/jpeg.png" alt="Home">
+                <p class="file-name">Photo<span class="file-extension">.jpg</span></p>
+                <p class="item-info">128 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/docx_mac.png" alt="Home">
+                <p class="file-name">Resume<span class="file-extension">.docx</span></p>
+                <p class="item-info">9 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/xlsx_mac.png" alt="Home">
+                <p class="file-name">Budget<span class="file-extension">.xlsx</span></p>
+                <p class="item-info">128 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song<span class="file-extension">.mp3</span></p>
+                <p class="item-info">3.5 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song1<span class="file-extension">.mp3</span></p>
+                <p class="item-info">4 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song2<span class="file-extension">.mp3</span></p>
+                <p class="item-info">5 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song3<span class="file-extension">.mp3</span></p>
+                <p class="item-info">2.3 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mpeg.png" alt="Home">
+                <p class="file-name">Movie<span class="file-extension">.mp3</span></p>
+                <p class="item-info">5.2 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64 selected">
+                <img src="img/FileIcons/Default/128/html.png" title="Homepagewith_a_really_long_file_name_and_stuff.html" alt="Home">
+                <p class="file-name">Homepagewith_a_really_long_file_name_and_stuff<span class="file-extension">.html</span></p>
+                <p class="item-info">13 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/psd.png" alt="Home">
+                <p class="file-name">Image<span class="file-extension">.psd</span></p>
+                <p class="item-info">1.3 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/jpeg.png" alt="Home">
+                <p class="file-name">Photo<span class="file-extension">.jpg</span></p>
+                <p class="item-info">128 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/docx_mac.png" alt="Home">
+                <p class="file-name">Resume<span class="file-extension">.docx</span></p>
+                <p class="item-info">9 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/xlsx_mac.png" alt="Home">
+                <p class="file-name">Budget<span class="file-extension">.xlsx</span></p>
+                <p class="item-info">128 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song<span class="file-extension">.mp3</span></p>
+                <p class="item-info">3.5 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song1<span class="file-extension">.mp3</span></p>
+                <p class="item-info">4 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song2<span class="file-extension">.mp3</span></p>
+                <p class="item-info">5 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song3<span class="file-extension">.mp3</span></p>
+                <p class="item-info">2.3 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mpeg.png" alt="Home">
+                <p class="file-name">Movie<span class="file-extension">.mp3</span></p>
+                <p class="item-info">5.2 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64 selected">
+                <img src="img/FileIcons/Default/128/html.png" title="Homepagewith_a_really_long_file_name_and_stuff.html" alt="Home">
+                <p class="file-name">Homepagewith_a_really_long_file_name_and_stuff<span class="file-extension">.html</span></p>
+                <p class="item-info">13 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/psd.png" alt="Home">
+                <p class="file-name">Image<span class="file-extension">.psd</span></p>
+                <p class="item-info">1.3 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/jpeg.png" alt="Home">
+                <p class="file-name">Photo<span class="file-extension">.jpg</span></p>
+                <p class="item-info">128 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/docx_mac.png" alt="Home">
+                <p class="file-name">Resume<span class="file-extension">.docx</span></p>
+                <p class="item-info">9 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/xlsx_mac.png" alt="Home">
+                <p class="file-name">Budget<span class="file-extension">.xlsx</span></p>
+                <p class="item-info">128 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song<span class="file-extension">.mp3</span></p>
+                <p class="item-info">3.5 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song1<span class="file-extension">.mp3</span></p>
+                <p class="item-info">4 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song2<span class="file-extension">.mp3</span></p>
+                <p class="item-info">5 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song3<span class="file-extension">.mp3</span></p>
+                <p class="item-info">2.3 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mpeg.png" alt="Home">
+                <p class="file-name">Movie<span class="file-extension">.mp3</span></p>
+                <p class="item-info">5.2 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64 selected">
+                <img src="img/FileIcons/Default/128/html.png" title="Homepagewith_a_really_long_file_name_and_stuff.html" alt="Home">
+                <p class="file-name">Homepagewith_a_really_long_file_name_and_stuff<span class="file-extension">.html</span></p>
+                <p class="item-info">13 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/psd.png" alt="Home">
+                <p class="file-name">Image<span class="file-extension">.psd</span></p>
+                <p class="item-info">1.3 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/jpeg.png" alt="Home">
+                <p class="file-name">Photo<span class="file-extension">.jpg</span></p>
+                <p class="item-info">128 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/docx_mac.png" alt="Home">
+                <p class="file-name">Resume<span class="file-extension">.docx</span></p>
+                <p class="item-info">9 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/xlsx_mac.png" alt="Home">
+                <p class="file-name">Budget<span class="file-extension">.xlsx</span></p>
+                <p class="item-info">128 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song<span class="file-extension">.mp3</span></p>
+                <p class="item-info">3.5 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song1<span class="file-extension">.mp3</span></p>
+                <p class="item-info">4 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song2<span class="file-extension">.mp3</span></p>
+                <p class="item-info">5 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song3<span class="file-extension">.mp3</span></p>
+                <p class="item-info">2.3 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mpeg.png" alt="Home">
+                <p class="file-name">Movie<span class="file-extension">.mp3</span></p>
+                <p class="item-info">5.2 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64 selected">
+                <img src="img/FileIcons/Default/128/html.png" title="Homepagewith_a_really_long_file_name_and_stuff.html" alt="Home">
+                <p class="file-name">Homepagewith_a_really_long_file_name_and_stuff<span class="file-extension">.html</span></p>
+                <p class="item-info">13 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/psd.png" alt="Home">
+                <p class="file-name">Image<span class="file-extension">.psd</span></p>
+                <p class="item-info">1.3 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/jpeg.png" alt="Home">
+                <p class="file-name">Photo<span class="file-extension">.jpg</span></p>
+                <p class="item-info">128 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/docx_mac.png" alt="Home">
+                <p class="file-name">Resume<span class="file-extension">.docx</span></p>
+                <p class="item-info">9 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/xlsx_mac.png" alt="Home">
+                <p class="file-name">Budget<span class="file-extension">.xlsx</span></p>
+                <p class="item-info">128 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song<span class="file-extension">.mp3</span></p>
+                <p class="item-info">3.5 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song1<span class="file-extension">.mp3</span></p>
+                <p class="item-info">4 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song2<span class="file-extension">.mp3</span></p>
+                <p class="item-info">5 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song3<span class="file-extension">.mp3</span></p>
+                <p class="item-info">2.3 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mpeg.png" alt="Home">
+                <p class="file-name">Movie<span class="file-extension">.mp3</span></p>
+                <p class="item-info">5.2 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64 selected">
+                <img src="img/FileIcons/Default/128/html.png" title="Homepagewith_a_really_long_file_name_and_stuff.html" alt="Home">
+                <p class="file-name">Homepagewith_a_really_long_file_name_and_stuff<span class="file-extension">.html</span></p>
+                <p class="item-info">13 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/psd.png" alt="Home">
+                <p class="file-name">Image<span class="file-extension">.psd</span></p>
+                <p class="item-info">1.3 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/jpeg.png" alt="Home">
+                <p class="file-name">Photo<span class="file-extension">.jpg</span></p>
+                <p class="item-info">128 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/docx_mac.png" alt="Home">
+                <p class="file-name">Resume<span class="file-extension">.docx</span></p>
+                <p class="item-info">9 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/xlsx_mac.png" alt="Home">
+                <p class="file-name">Budget<span class="file-extension">.xlsx</span></p>
+                <p class="item-info">128 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song<span class="file-extension">.mp3</span></p>
+                <p class="item-info">3.5 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song1<span class="file-extension">.mp3</span></p>
+                <p class="item-info">4 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song2<span class="file-extension">.mp3</span></p>
+                <p class="item-info">5 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mp3.png" alt="Home">
+                <p class="file-name">Song3<span class="file-extension">.mp3</span></p>
+                <p class="item-info">2.3 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/mpeg.png" alt="Home">
+                <p class="file-name">Movie<span class="file-extension">.mp3</span></p>
+                <p class="item-info">5.2 MB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64 selected">
+                <img src="img/FileIcons/Default/128/html.png" title="Homepagewith_a_really_long_file_name_and_stuff.html" alt="Home">
+                <p class="file-name">Homepagewith_a_really_long_file_name_and_stuff<span class="file-extension">.html</span></p>
+                <p class="item-info">13 KB</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon icon-64">
+                <img src="img/FileIcons/Default/128/psd.png" alt="Home">
+                <p class="file-name">Image<span class="file-extension">.psd</span></p>
+                <p class="item-info">1.3 MB</p>
+            </div>
         </div>
         <!-- end dummy content -->
     </div>
